@@ -1,4 +1,7 @@
-import jwt
+try:
+    import pyjwt as jwt
+except ImportError:
+    import jwt
 
 secret_key = None
 
